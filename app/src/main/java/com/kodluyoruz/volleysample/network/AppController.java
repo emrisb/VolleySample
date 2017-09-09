@@ -31,7 +31,7 @@ public class AppController extends Application {
         mInstance = this;
     }
 
-    private RequestQueue getRequestQueue() {
+    public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
             mRequestQueue = Volley.newRequestQueue(getApplicationContext());
         }
